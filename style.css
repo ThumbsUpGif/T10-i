@@ -1,40 +1,150 @@
 * {
-    /* box-sizing: border;
+    box-sizing: border;
     margin: 0;
-    padding: 0; */
+    padding: 0;
+}
+
+:root {
 
 }
 
 body {
-    background-color: lightskyblue;
+    font-size: 19px;
 }
 
 .main {
-    /* max-width: 1600px; */
-    /* min-width: 360px; */
+    max-width: 1600px;
+    min-width: 360px;
 }
 
-.hero {
-    background-color: coral;
-    /* position: absolute; */
-    top: 0%;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
 
+/* .grid:nth-child(1) {
+    z-index: -3;
+}
+
+.grid:nth-child(2) {
+    z-index: 2;
+}
+
+.grid:nth-child(3) {
+    z-index: 5;
+} */
+
+.hero {
+    /* background-color: coral; */
+    top: 0%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-content: center;
     height: 100vh;
     width: 100vw;    
 }
 
-.hero-background {
-    max-height: calc(100vh - 120px);
-    height: 100%;
-    width: auto;
+.hero__colourbox {
+    /* position: relative; */
     background-color: #e7ec00;
     background-image: linear-gradient(0deg, #e7ec00 0%, #ec00ec 100%);
+    grid-column: 1 / 8;
+    grid-row: 1 / 7; 
+    z-index: -3;
+    border: solid 4vw #fff;
 }
 
-.about {
-    background-color: mediumaquamarine;
-    position: relative;
-    height: 900px;
-    width: auto;
+.slogan--1 {
+    /* position: absolute; */
+    grid-row: 3 / 5; 
+    grid-column: 2 / 6;
+    
+    z-index: 10;
+    /* margin-top: 25vh; */
+    /* height: 30vw; */
+}
 
+.slogan--2 {
+    grid-row: 4 / 9; 
+    grid-column: 3 / 8;
+    z-index: 10;
+    transform: translateY(-5vh);
+    /* margin: 1rem; */
+}
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #111;
+    background-color: #fff;
+    border: solid 2px #111;
+    font-size: clamp(1rem, 2vw + 1rem, 6rem)
+}
+
+
+.photo--1 {
+    position: relative;
+    background-image: url('./media/photo/emmanuel-ikwuegbu-ZsObS42_i_0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(0.9);
+    grid-column: 8 / 12;
+    grid-row: 2/6;
+    z-index: 5;
+}
+
+
+.photo--2 {
+    background-image: url('./media/photo/piotr-chrobot-6oUsyeYXgTg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(0.9) brightness(150%);
+    z-index: 3;
+    grid-row: 5 / 10;
+    grid-column: 3 / 9;
+    transform: translateY(10vh);
+
+}
+
+
+
+.about {
+    /* background-color: mediumaquamarine; */
+    position: relative;
+    min-height: 900px;
+}
+
+
+.about__text {
+    grid-column: 2 / 6;
+    grid-row: 4/10;
+    height: auto;
+    transform: translateY(-8vh);
+}
+
+.spacer--1 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX( -20px);
+    background-color: #01E3AD;
+}
+
+.about__colourbox {
+    background-color: #00eca5;
+    background-image: linear-gradient(180deg, #00eca5 0%, #0097ec 100%);
+    grid-column: 7 / 12;
+    grid-row: 3/6;
+    z-index: -5;
+}
+
+
+.photo--3 {
+    background-image: url('./media/photo/john-onaeko-Ya1cMVo7OsI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(1.1) brightness(90%);
+    grid-column: 9 / 12;
+    grid-row: 4 / 12;
+    z-index: 2;
 }

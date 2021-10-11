@@ -1,0 +1,47 @@
+
+@media only screen and (max-width: 400px) {
+    
+    .main {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right:auto;
+        /* overflow: hidden; */
+    }
+
+    .hero__colourbox {
+        grid-row: 1 / 6; 
+        grid-column: 1 / 11 ;
+        z-index: -3;
+        border: solid 4vw #fff;
+    }
+
+    .photo--1 {
+        grid-row: 2/4;
+        grid-column: 3 / 11;
+        z-index: 5;
+    }
+
+    .slogan--1 {
+        grid-row: 3 / 6; 
+        grid-column: 2 / 9;
+        z-index: 10;
+        transform: translateY(8vh);
+    }
+    
+    .slogan--2 {
+        grid-row: 4 / 9; 
+        grid-column: 3 / 10;
+        z-index: 10;
+        transform: translateY(-5vh);
+    }
+ 
+    .photo--2 {
+        z-index: 3;
+        grid-row: 5 / 8;
+        grid-column: 2 / 10;
+        transform: translateY(10vh);
+    
+    }
+
+}
+
