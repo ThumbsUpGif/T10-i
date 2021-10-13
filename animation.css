@@ -1,0 +1,66 @@
+
+/* .fade-in {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+} */
+
+
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        
+    }
+
+
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+
+.appear-from-right {
+    
+    animation-name: fadeInFromRight;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+       
+        transform: translateX(20vmax);
+    }
+
+
+    100% {
+        
+        transform: translateX(0);
+    }
+}
+
+
+.appear-from-below {
+    
+    animation-name: fadeUp;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        
+        transform: translateY(20vmax);
+    }
+
+
+    100% {
+        
+        transform: translateY(0);
+    }
+}

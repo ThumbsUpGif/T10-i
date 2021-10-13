@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #111;
+    font-size: clamp(1.62rem, 2vmax + 1rem, 6rem);
+
+    background-color: #fff;
+    padding: 1vmin 0 1vmin 3vmin;
+    border: solid 0.2vmin #111;
+    
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #111;
+    font-size: clamp(1.62rem, 1vmax + 1rem, 3rem);
+    /* letter-spacing: 0.05rem; */
+    margin-bottom: 0.5vmax;
+
+}
+
+p {
+font-family: 'Public Sans', sans-serif;
+font-weight: 200;
+line-height: 1.4;
+padding: 1vmin 0 1vmin 3vmin;
+}
+
