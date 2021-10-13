@@ -22,7 +22,7 @@
 }
 
 
-.appear-from-right {
+/* .appear-from-right {
     
     animation-name: fadeInFromRight;
     animation-duration: 2s;
@@ -41,7 +41,7 @@
         
         transform: translateX(0);
     }
-}
+} */
 
 
 .appear-from-below {

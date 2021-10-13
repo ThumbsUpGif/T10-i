@@ -13,14 +13,8 @@ body {
 .main {
     max-width: 1600px;
     /* min-width: 360px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 8.33vw);
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -32,6 +26,8 @@ body {
     align-content: center;
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
     grid-template-rows: repeat(6, 1fr);
 }
 
@@ -88,21 +84,21 @@ body {
 }
 
 
-.about {
-    /* background-color: mediumaquamarine; */
-    position: relative;
-    min-height: 900px;
+.grid__text {
     display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(30, 16vh);
 }
 
 
-.about__text {
+
+.when_text {
+    /* background-color: red; */
     grid-column: 2 / 6;
-    grid-row: 4/10;
-    height: auto;
+    grid-row: 4/7;
+    /* height: auto; */
     transform: translateY(-8vh);
-    /* max-width: 560px; */
+    max-width: 560px;
 }
 
 .spacer--1 {
@@ -127,42 +123,42 @@ body {
     background-repeat: no-repeat;
     background-size: contain, cover;
     filter: saturate(0%)contrast(1.1) brightness(90%);
-    grid-column: 9 / 12;
+    grid-column: 7 / 11;
     grid-row: 6 / 13;
-    z-index: 2;
-    transform: translateX(-8vw);
+    transform: translateX(4vw);
+    z-index: 5;
 }
 
 
-.in-viewport {
-    background-color: red;
-    /* filter: invert(100%); */
-}
+
 
 .graphic--1 {
     background-image: url('./media/svg/noun_covid-19_3776320.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    grid-column: 3 / 6;
-    grid-row: 10/13;
-    z-index: -10;
     filter: opacity(40%);
+    grid-column: 2 / 4;
+    grid-row: 12/14;
+    transform: translate(-4vh, -8vh);
+    transform: rotate(8deg);
+    z-index: -10;
+
 }
 
-.you {
+/* .you {
     position: relative;
     min-height: 900px;
     display: grid;
     grid-template-columns: 12 / 8.33vw;
     grid-template-rows: repeat(14, 16vh);
-}
+} */
 
 .introduce-fund {
-    grid-column: 3 / 10;
-    grid-row: 2/5;
+    grid-column: 4 / 9;
+    grid-row: 14/19;
     height: auto;
-    transform: translateY(-8vh);
-    /* max-width: 560px; */
+    /* transform: translateY(-8vh); */
+    max-width: 560px;
 }
 
 .spacer--2 {
@@ -177,22 +173,20 @@ body {
     background-image: url('./media/svg/noun_covid\ research_4276452.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    grid-column: 8 / 11;
-    transform: translateX(8vw);
-    grid-row: 6/13;
-    z-index: -3;
-    /* min-width: 30vw; */
-    /* max-width: 240px; */
     filter: opacity(40%);
+    grid-column: 10 / 12;
+    transform: translateY(-8vh);
+    grid-row: 19/21;
+    z-index: -3;
 }
 
 .you__colourbox {
     background-color: #f2a580;
     background-image: linear-gradient(1deg, #f2a580 0%, #51b8b8 100%);
     grid-column: 1 / 13;
-    grid-row: 8 / 12;
+    grid-row: 20 / 24;
     z-index: -5;
-    min-width: 100vw;
+
 }
 
 .photo--4 {
@@ -200,9 +194,9 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     filter: saturate(0%)contrast(1.1) brightness(90%);
-    grid-column: 2 / 10;
-    grid-row: 8 / 13;
+    grid-column: 6 / 12;
+    grid-row: 21 / 27;
+    transform: translateY(8vh);
     z-index: 5;
 
 }
-
